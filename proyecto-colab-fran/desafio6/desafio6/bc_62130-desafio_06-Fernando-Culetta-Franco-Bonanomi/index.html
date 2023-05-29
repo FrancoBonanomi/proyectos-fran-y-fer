@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/estilos-retro.css">  -->
+    <!-- <link rel="stylesheet" href="css/estilos-futuro.css"> -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <title>Desafío 06 - Formulario</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Vení al Gym!💪🏼</h1>
+        <form>
+            <fieldset class="fieldset1">
+                <legend>🙋‍♂️ <span class="iniciales-titulo">D</span>ATOS <span
+                        class="iniciales-titulo">P</span>ERSONALES 👀</legend>
+                <label for="nombre">Nombre:*</label>
+                <input class="input-100" type="text" id="nombre" required>
+
+                <label for="apellido">Apellido:*</label>
+                <input class="input-100" type="text" id="apellido" required>
+
+                <label for="documento">Documento:*</label>
+                <input class="input-100" type="number" id="documento" required>
+
+                <label for="nacionalidad">Nacionalidad:*</label>
+                <select class="input-100" name="nacionalidad" id="nacionalidad" required>
+                    <option selected value="" label="- Seleccionar -"></option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasileña</option>
+                    <option value="3">Uruguaya</option>
+                    <option value="4">Otra</option>
+                </select>
+
+                <label for="contanos">Contanos un poco de vos...</label>
+                <textarea class="input-100" id="contanos"></textarea>
+
+                <p class="p-sexo">Sexo:*</p>
+                <div class="radio-contenedor">
+                    <input type="radio" id="femenino" name="sexo" value="femenino" required>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="otro" name="sexo" value="otro" required>
+                    <label for="otro">Otro</label>
+                </div>
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+                <legend>📱 <span class="iniciales-titulo">D</span>ATOS DE <span class="iniciales-titulo">C</span>ONTACTO
+                    📧
+                </legend>
+                <label for="telefono">Telefono:</label>
+                <input placeholder="Código de área y número" class="input-100" type="number" id="telefono">
+                <label for="email">Dirección de correo electrónico:*</label>
+                <input placeholder="Ej: mail@gmail.com" class="input-100" type="email" id="email" required>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="fieldset3-padding">
+                <legend>🚴‍♀️<span class="iniciales-titulo">A</span>CTIVIDADES 🤸‍♂️
+                </legend>
+                <p class="p-actividades">Por favor, indica cuáles actividades te interesan.
+                <p>
+                <p>Sede Palermo:</p>
+                <div class="radio-contenedor radio-contenedor--start">
+
+                    <input type="checkbox" id="basquet" name="basquet" value="basquet">
+                    <label for="basquet">Básquet</label>
+
+                    <input type="checkbox" id="boxeo" name="boxeo" value="boxeo">
+                    <label for="boxeo">Boxeo</label>
+
+                    <input type="checkbox" id="futbol" name="futbol" value="futbol">
+                    <label for="futbol">Fútbol</label>
+
+                    <input type="checkbox" id="tenis" name="tenis" value="tenis">
+                    <label for="tenis">Tenis</label>
+                </div>
+
+
+                <p>Sede Rosario:</p>
+
+                <div class="radio-contenedor radio-contenedor--start">
+
+                    <input type="checkbox" id="basquet2" name="basquet2" value="basquet2">
+                    <label for="basquet2">Básquet</label>
+
+                    <input type="checkbox" id="futbol2" name="futbol2" value="futbol2">
+                    <label for="futbol2">Fútbol</label>
+
+                    <input type="checkbox" id="rugby" name="rugby" value="rugby">
+                    <label for="rugby">Rugby</label>
+
+                    <input type="checkbox" id="voley" name="voley" value="voley">
+                    <label for="voley">Voley</label>
+                </div>
+
+            </fieldset>
+            <div class="checkbox-container">
+                <div class="checkbox-subcontenedor">
+                    <input type="checkbox" id="acepto" name="acepto" value="acepto" required>
+                    <label for="acepto" class="label-blanco">Acepto las condiciones*</label>
+                </div>
+                <div class="checkbox-subcontenedor">
+                    <input type="checkbox" id="novedades" name="novedades" value="novedades">
+                    <label for="novedades" class="label-blanco">Deseo recibir novedades</label>
+                </div>
+                <p class="p-blanco">*: campo obligatorio.</p>
+            </div>
+            <div class="button-container">
+                <input class="button-submit" type="submit" value="Iniciar afiliación">
+                <input class="button-submit" id="Borrar" type="reset" value="Restablecer" name="Borrar">
+            </div>
+        </form>
+    </div>
+</body>
